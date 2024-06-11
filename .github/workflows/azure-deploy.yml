@@ -25,6 +25,6 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'YOUR_APP_NAME'
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        app-name: 'Keycloak'
+        publish-profile: 'AZURE_WEBAPP_PUBLISH_PROFILE'
         package: '.'
